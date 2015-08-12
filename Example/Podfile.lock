@@ -1,0 +1,14 @@
+PODS:
+  - DSAlertView-Blocks (1.1.0)
+
+DEPENDENCIES:
+  - DSAlertView-Blocks (from `../`)
+
+EXTERNAL SOURCES:
+  DSAlertView-Blocks:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DSAlertView-Blocks: 31dc46297c2dc4e4d2379ec5490e03efac65971c
+
+COCOAPODS: 0.38.2

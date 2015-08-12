@@ -9,19 +9,19 @@
 
 Pod::Spec.new do |s|
   s.name             = "DSAlertView-Blocks"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of DSAlertView-Blocks."
+  s.version          = "1.1.0"
+  s.summary          = "UIAlertView和UIActionSheet的分类,Block代替代理方法"
   s.description      = <<-DESC
-                       An optional longer description of DSAlertView-Blocks
+                       UIAlertView和UIActionSheet的分类
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/DSAlertView-Blocks"
+  s.homepage         = "http://linfeng1009.gitcafe.io"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "DaShen" => "1057105719@qq.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/DSAlertView-Blocks.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/ludaye123/DSAlertView-Blocks.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
