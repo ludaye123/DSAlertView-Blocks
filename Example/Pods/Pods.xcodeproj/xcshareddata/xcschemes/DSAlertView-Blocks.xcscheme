@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4E032F9293733714B8BF353E"
+               BlueprintIdentifier = "3D73E0F48E9D48C7D4C419EB"
                BuildableName = "DSAlertView_Blocks.framework"
                BlueprintName = "DSAlertView-Blocks"
                ReferencedContainer = "container:Pods.xcodeproj">

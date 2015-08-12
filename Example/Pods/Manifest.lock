@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DSAlertView-Blocks: 31dc46297c2dc4e4d2379ec5490e03efac65971c
+  DSAlertView-Blocks: 4c8e3a3b32bed75fa902573303929d31eacee8b0
 
 COCOAPODS: 0.38.2
