@@ -1,9 +1,0 @@
-source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
-
-
-target 'DSAlertView-Blocks_Tests', :exclusive => true do
-  pod "DSAlertView-Blocks", :path => "../"
-
-  
-end
