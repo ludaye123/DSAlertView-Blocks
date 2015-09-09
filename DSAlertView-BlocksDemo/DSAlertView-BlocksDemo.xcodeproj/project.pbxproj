@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49191D301B9FCC27007BEBE1 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 49191D291B9FCC27007BEBE1 /* .gitkeep */; };
+		49191D311B9FCC27007BEBE1 /* DSAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 49191D2B1B9FCC27007BEBE1 /* DSAlertAction.m */; };
+		49191D321B9FCC27007BEBE1 /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 49191D2D1B9FCC27007BEBE1 /* UIActionSheet+Blocks.m */; };
+		49191D331B9FCC27007BEBE1 /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 49191D2F1B9FCC27007BEBE1 /* UIAlertView+Blocks.m */; };
 		4954826E1B8EF32100D2156C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4954826D1B8EF32100D2156C /* main.m */; };
 		495482711B8EF32100D2156C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 495482701B8EF32100D2156C /* AppDelegate.m */; };
 		495482741B8EF32100D2156C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495482731B8EF32100D2156C /* ViewController.m */; };
@@ -14,9 +18,6 @@
 		495482791B8EF32100D2156C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 495482781B8EF32100D2156C /* Images.xcassets */; };
 		4954827C1B8EF32100D2156C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4954827A1B8EF32100D2156C /* LaunchScreen.xib */; };
 		495482881B8EF32100D2156C /* DSAlertView_BlocksDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 495482871B8EF32100D2156C /* DSAlertView_BlocksDemoTests.m */; };
-		4954829A1B8EF3C500D2156C /* DSAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 495482941B8EF3C500D2156C /* DSAlertAction.m */; };
-		4954829B1B8EF3C500D2156C /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 495482961B8EF3C500D2156C /* UIActionSheet+Blocks.m */; };
-		4954829C1B8EF3C500D2156C /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 495482981B8EF3C500D2156C /* UIAlertView+Blocks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +31,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49191D291B9FCC27007BEBE1 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		49191D2A1B9FCC27007BEBE1 /* DSAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAlertAction.h; sourceTree = "<group>"; };
+		49191D2B1B9FCC27007BEBE1 /* DSAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAlertAction.m; sourceTree = "<group>"; };
+		49191D2C1B9FCC27007BEBE1 /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
+		49191D2D1B9FCC27007BEBE1 /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
+		49191D2E1B9FCC27007BEBE1 /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		49191D2F1B9FCC27007BEBE1 /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 		495482681B8EF32100D2156C /* DSAlertView-BlocksDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DSAlertView-BlocksDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4954826C1B8EF32100D2156C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4954826D1B8EF32100D2156C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,12 +51,6 @@
 		495482811B8EF32100D2156C /* DSAlertView-BlocksDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DSAlertView-BlocksDemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		495482861B8EF32100D2156C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495482871B8EF32100D2156C /* DSAlertView_BlocksDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSAlertView_BlocksDemoTests.m; sourceTree = "<group>"; };
-		495482931B8EF3C500D2156C /* DSAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSAlertAction.h; sourceTree = "<group>"; };
-		495482941B8EF3C500D2156C /* DSAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSAlertAction.m; sourceTree = "<group>"; };
-		495482951B8EF3C500D2156C /* UIActionSheet+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Blocks.h"; sourceTree = "<group>"; };
-		495482961B8EF3C500D2156C /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
-		495482971B8EF3C500D2156C /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
-		495482981B8EF3C500D2156C /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49191D281B9FCC27007BEBE1 /* DSAlertView-Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				49191D291B9FCC27007BEBE1 /* .gitkeep */,
+				49191D2A1B9FCC27007BEBE1 /* DSAlertAction.h */,
+				49191D2B1B9FCC27007BEBE1 /* DSAlertAction.m */,
+				49191D2C1B9FCC27007BEBE1 /* UIActionSheet+Blocks.h */,
+				49191D2D1B9FCC27007BEBE1 /* UIActionSheet+Blocks.m */,
+				49191D2E1B9FCC27007BEBE1 /* UIAlertView+Blocks.h */,
+				49191D2F1B9FCC27007BEBE1 /* UIAlertView+Blocks.m */,
+			);
+			path = "DSAlertView-Blocks";
+			sourceTree = "<group>";
+		};
 		4954825F1B8EF32100D2156C = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +106,7 @@
 		4954826A1B8EF32100D2156C /* DSAlertView-BlocksDemo */ = {
 			isa = PBXGroup;
 			children = (
-				495482911B8EF3C500D2156C /* DSAlertView-Blocks */,
+				49191D281B9FCC27007BEBE1 /* DSAlertView-Blocks */,
 				4954826F1B8EF32100D2156C /* AppDelegate.h */,
 				495482701B8EF32100D2156C /* AppDelegate.m */,
 				495482721B8EF32100D2156C /* ViewController.h */,
@@ -127,19 +143,6 @@
 				495482861B8EF32100D2156C /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		495482911B8EF3C500D2156C /* DSAlertView-Blocks */ = {
-			isa = PBXGroup;
-			children = (
-				495482931B8EF3C500D2156C /* DSAlertAction.h */,
-				495482941B8EF3C500D2156C /* DSAlertAction.m */,
-				495482951B8EF3C500D2156C /* UIActionSheet+Blocks.h */,
-				495482961B8EF3C500D2156C /* UIActionSheet+Blocks.m */,
-				495482971B8EF3C500D2156C /* UIAlertView+Blocks.h */,
-				495482981B8EF3C500D2156C /* UIAlertView+Blocks.m */,
-			);
-			path = "DSAlertView-Blocks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +228,7 @@
 				495482771B8EF32100D2156C /* Main.storyboard in Resources */,
 				4954827C1B8EF32100D2156C /* LaunchScreen.xib in Resources */,
 				495482791B8EF32100D2156C /* Images.xcassets in Resources */,
+				49191D301B9FCC27007BEBE1 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,9 +249,9 @@
 				495482741B8EF32100D2156C /* ViewController.m in Sources */,
 				495482711B8EF32100D2156C /* AppDelegate.m in Sources */,
 				4954826E1B8EF32100D2156C /* main.m in Sources */,
-				4954829C1B8EF3C500D2156C /* UIAlertView+Blocks.m in Sources */,
-				4954829B1B8EF3C500D2156C /* UIActionSheet+Blocks.m in Sources */,
-				4954829A1B8EF3C500D2156C /* DSAlertAction.m in Sources */,
+				49191D331B9FCC27007BEBE1 /* UIAlertView+Blocks.m in Sources */,
+				49191D321B9FCC27007BEBE1 /* UIActionSheet+Blocks.m in Sources */,
+				49191D311B9FCC27007BEBE1 /* DSAlertAction.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +446,7 @@
 				4954828D1B8EF32100D2156C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4954828E1B8EF32100D2156C /* Build configuration list for PBXNativeTarget "DSAlertView-BlocksDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +455,7 @@
 				495482901B8EF32100D2156C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,7 +10,7 @@
 #import <objc/runtime.h>
 
 
-static NSString * const RI_BUTTON_ASS_KEY = @"com.random-ideas.BUTTONS";
+static NSString * const ALERT_ACTIONS = @"buttons";
 
 @implementation UIAlertView (Blocks)
 
@@ -65,21 +65,21 @@ static NSString * const RI_BUTTON_ASS_KEY = @"com.random-ideas.BUTTONS";
 {
     if(buttonIndex >= 0)
     {
-        NSArray *alertActions = objc_getAssociatedObject(self, (__bridge void *)RI_BUTTON_ASS_KEY);
+        NSArray *alertActions = objc_getAssociatedObject(self, (__bridge void *)ALERT_ACTIONS);
         DSAlertAction *alertAction = alertActions[buttonIndex];
         if(alertAction.alertActionBlock)
             alertAction.alertActionBlock();
     }    
-    objc_setAssociatedObject(self, (__bridge void *)RI_BUTTON_ASS_KEY, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, (__bridge void *)ALERT_ACTIONS, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (NSMutableArray *)alertActions
 {
-    NSMutableArray *alertActions = objc_getAssociatedObject(self, (__bridge void *)RI_BUTTON_ASS_KEY);
+    NSMutableArray *alertActions = objc_getAssociatedObject(self, (__bridge void *)ALERT_ACTIONS);
     if(!alertActions)
     {
         alertActions = [NSMutableArray array];
-        objc_setAssociatedObject(self, (__bridge void *)RI_BUTTON_ASS_KEY, alertActions, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(self, (__bridge void *)ALERT_ACTIONS, alertActions, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     
     return alertActions;

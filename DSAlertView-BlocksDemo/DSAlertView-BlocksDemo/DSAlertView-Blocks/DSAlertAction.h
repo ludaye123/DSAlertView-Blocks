@@ -12,7 +12,7 @@ typedef void(^DSAlertActionBlock) ();
 
 @interface DSAlertAction : NSObject
 
-@property (strong, nonatomic) NSString *title;
+@property (copy, nonatomic) NSString *title;
 @property (copy, nonatomic) DSAlertActionBlock alertActionBlock;
 
 + (id)actionWithTitle:(NSString *)title handler:(DSAlertActionBlock)alertActionBlock;

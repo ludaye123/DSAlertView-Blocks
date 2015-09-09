@@ -9,8 +9,8 @@
 #import "UIActionSheet+Blocks.h"
 #import <objc/runtime.h>
 
-static NSString *RI_BUTTON_ASS_KEY = @"com.random-ideas.BUTTONS";
-static NSString *RI_DISMISSAL_ACTION_KEY = @"com.random-ideas.DISMISSAL_ACTION";
+static NSString *ALERT_ACTIONS = @"buttons";
+static NSString *DISMISS_ACTION_KEY = @"dismiss_action";
 
 @implementation UIActionSheet (Blocks)
 
@@ -53,7 +53,7 @@ static NSString *RI_DISMISSAL_ACTION_KEY = @"com.random-ideas.DISMISSAL_ACTION";
             [self setCancelButtonIndex:cancelIndex];
         }
         
-        objc_setAssociatedObject(self, (__bridge void *)RI_BUTTON_ASS_KEY, alertActions, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(self, (__bridge void *)ALERT_ACTIONS, alertActions, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     
     return self;
@@ -61,7 +61,7 @@ static NSString *RI_DISMISSAL_ACTION_KEY = @"com.random-ideas.DISMISSAL_ACTION";
 
 - (NSInteger)addAction:(DSAlertAction *)action
 {
-    NSMutableArray *alertActions = objc_getAssociatedObject(self, (__bridge void *)RI_BUTTON_ASS_KEY);
+    NSMutableArray *alertActions = objc_getAssociatedObject(self, (__bridge void *)ALERT_ACTIONS);
     NSInteger buttonIndex = [self addButtonWithTitle:action.title];
     [alertActions addObject:action];
     
@@ -70,21 +70,20 @@ static NSString *RI_DISMISSAL_ACTION_KEY = @"com.random-ideas.DISMISSAL_ACTION";
 
 - (void)setDismissalAction:(void(^)())dismissalAction
 {
-    objc_setAssociatedObject(self, (__bridge const void *)RI_DISMISSAL_ACTION_KEY, nil, OBJC_ASSOCIATION_COPY);
-    objc_setAssociatedObject(self, (__bridge const void *)RI_DISMISSAL_ACTION_KEY, dismissalAction, OBJC_ASSOCIATION_COPY);
+    objc_setAssociatedObject(self, (__bridge const void *)DISMISS_ACTION_KEY, nil, OBJC_ASSOCIATION_COPY);
+    objc_setAssociatedObject(self, (__bridge const void *)DISMISS_ACTION_KEY, dismissalAction, OBJC_ASSOCIATION_COPY);
 }
 
 - (void(^)())dismissalAction
 {
-    return objc_getAssociatedObject(self, (__bridge const void *)RI_DISMISSAL_ACTION_KEY);
+    return objc_getAssociatedObject(self, (__bridge const void *)DISMISS_ACTION_KEY);
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-    // Action sheets pass back -1 when they're cleared for some reason other than a button being clear
     if (buttonIndex >= 0)
     {
-        NSArray *buttonsArray = objc_getAssociatedObject(self, (__bridge const void *)RI_BUTTON_ASS_KEY);
+        NSArray *buttonsArray = objc_getAssociatedObject(self, (__bridge const void *)ALERT_ACTIONS);
         DSAlertAction *item = [buttonsArray objectAtIndex:buttonIndex];
         if(item.alertActionBlock)
             item.alertActionBlock();
@@ -92,8 +91,8 @@ static NSString *RI_DISMISSAL_ACTION_KEY = @"com.random-ideas.DISMISSAL_ACTION";
     
     if (self.dismissalAction) self.dismissalAction();
     
-    objc_setAssociatedObject(self, (__bridge const void *)RI_BUTTON_ASS_KEY, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    objc_setAssociatedObject(self, (__bridge const void *)RI_DISMISSAL_ACTION_KEY, nil, OBJC_ASSOCIATION_COPY);
+    objc_setAssociatedObject(self, (__bridge const void *)ALERT_ACTIONS, nil, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, (__bridge const void *)DISMISS_ACTION_KEY, nil, OBJC_ASSOCIATION_COPY);
 }
 
 @end
