@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|  
   s.name             = "DSAlertView-Blocks"  
-  s.version          = "1.1.1"  
+  s.version          = "1.1.2"  
   s.summary          = "UIAlertView和UIActionSheet的分类,Block代替代理方法"  
   s.description      = <<-DESC
                        UIAlertView和UIActionSheet的分类,Block代替代理方法
